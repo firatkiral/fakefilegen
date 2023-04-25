@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,25 @@
     <title>Fake File Gen</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body onload="setRandomInput()">
     <div class="container">
         <div class="container__item">
             <form class="form">
-                <input type="number" id="mb-input" class="form__field" placeholder="Enter File Size in MB" />
+                <div class="input-container">
+                    <input type="number" id="mb-input" class="form__field" placeholder="Enter File Size in MB" value="0"/>
+                    <span class="suffix" id="suffix">MB</span>
                 <button type="button" class="btn btn--primary btn--inside uppercase" onclick="generateFakeFile()">Generate File</button>
+                </div>
+                
             </form>
         </div>
-        
+
         <div class="container__item container__item--bottom">
             <p>Fake File Generator</p>
         </div>
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>
