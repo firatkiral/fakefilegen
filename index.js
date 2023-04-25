@@ -1,4 +1,4 @@
-document.getElementById('mb-input').value = Math.ceil(Math.random() * 20);
+// document.getElementById('mb-input').value = Math.ceil(Math.random() * 20);
 function generateFakeFile() {
     const sizeInMb = +document.getElementById('mb-input').value;
     const chunks = [];
